@@ -9,6 +9,22 @@
     
 </head>
 <body>
+    <div id="content" class="container">
+        <h1>{{ pageTitle }}</h1>
+    <p>{{ content}}</p>
+    </div>
     
+
+<script>
+    Vue.createApp({
+        data() {
+            return {
+                pageTitle: 'Hello Vue',
+                content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsam modi, quo soluta eum ratione.'
+            };
+        }
+    }).mount('#content');
+</script>
+
 </body>
 </html>
